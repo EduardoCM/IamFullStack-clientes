@@ -1,0 +1,66 @@
+<div class="container">
+<div class="alert alert-danger" role="alert" ng-if="errorMessage">{{errorMessage}}</div>
+<div class="panel panel-default ">
+		<div class="alert alert-success">
+			<span class="lead">Registrar nuevo cliente</span>
+		</div>
+		<div class="panel-body ">
+			<div class="container">
+				<form ng-submit="submitClienteForm()" name="myForm" class="form-horizontal">
+					<div class="row">
+						<div class="form-group col-md-12">
+							<label class="col-md-2 control-lable" for="nombre">Nombre</label>
+							<div class="col-md-7">
+								<input type="text" ng-model="cliente.nombre" id="nombre"
+									class="form-control input-sm"  placeholder="Nombre" />
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-12">
+							<label class="col-md-2 control-lable" for="apellidos">Apellidos</label>
+							<div class="col-md-7">
+								<input type="text" ng-model="cliente.apellidos" id="apellidos"
+									class="form-control input-sm" placeholder="Apellidos." />
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-12">
+							<label class="col-md-2 control-lable" for="edad">Edad</label>
+							<div class="col-md-7">
+								<input type="number" ng-model="cliente.edad" id="edad"
+									class="form-control input-sm" placeholder="Edad" />
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-12">
+							<label class="col-md-2 control-lable" for="genero">Genero</label>
+							<div class="col-md-7">
+								<input type="text" ng-model="cliente.genero" id="genero"
+									class="form-control input-sm" placeholder="Genero" />
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-12">
+							<label class="col-md-2 control-lable" for="direccion">Direccion</label>
+							<div class="col-md-7">
+								<input type="text" ng-model="cliente.direccion" id="direccion"
+									class="form-control input-sm" placeholder="direccion" />
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-actions floatRight">
+							<input type="submit" value="Registrar Cliente"
+								class="btn btn-primary btn-sm">
+							</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+</div>

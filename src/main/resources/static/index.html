@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="fullStackRegistroUsuarios">
+<head>
+<meta charset="UTF-8">
+<title>Clientes</title>
+</head>
+<body>
+
+	<div class="page-header text-center">
+		<h2>Full Stack Registro Usuarios</h2>
+	</div>
+
+	<nav class="navbar navbar-default">
+	 <div class="container-fluid">
+	 
+	 <a href="#/" class="btn btn-info navbar-btn" role="button">
+	         Home
+	 </a>
+	 
+	 <a href="#/registrar-nuevo-cliente" class="btn btn-info navbar-btn" role="button">
+	        Registrar nuevo cliente
+	 </a>
+	 
+	 <a href="#/list-clientes" class="btn btn-info" role="button">
+	     Listar Clientes
+	 </a>
+	 
+	 
+	 
+	 
+	 </div>
+	
+	
+	</nav>
+	
+	<div ng-view></div>
+	
+	
+	<script src="/webjars/angularjs/1.4.9/angular.js"></script>
+	<script src="/webjars/angularjs/1.4.9/angular-resource.js"></script>
+	<script src="/webjars/angularjs/1.4.9/angular-route.js"></script>
+	<link rel="stylesheet"
+		href="/webjars/bootstrap/3.3.6/css/bootstrap.css">
+		
+    <script src="/js/app.js"></script>
+    <script src="/js/controller.js"></script>
+
+</body>
+</html>
